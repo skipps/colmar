@@ -6,20 +6,9 @@ html{
   background-color: rgb(245,245,245);
 }
 
-@media only screen and (min-width: 480px){
-  .mobile{
-    visibility: hidden;
-  }
-}
-
-@media only screen and (max-width: 480px){
-  .desktop{
-    visibility: hidden;
-  }
-}
 
 
-/*  Banner  */
+/*  Banner with Nav bar  */
 
 .banner{
   display: flex;
@@ -27,26 +16,6 @@ html{
   height: 4rem;
   align-items: center;
   background-color: white;
-}
-
-.logo{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  color: black;
-  font-size: 1.5rem;
-  margin-left: 1.5rem;
-}
-
-.logo img{
-  height: 2rem;
-}
-
-.logo p:nth-child(3){
-  font-weight: normal;
-  color: grey;
 }
 
 .banner .navigation{
@@ -62,8 +31,43 @@ html{
   padding-left: 1rem;
 }
 
+.logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: black;
+  font-size: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+
+.logo p:nth-child(3){
+  font-weight: normal;
+  color: grey;
+}
+
 @media only screen and (max-width: 480px){
+  .banner .logo p{
+    display: none;
+  }
+
+  .banner .navigation .desktop{
+    display: none;
+  }
+
   .banner{
     justify-content: center;
+  }
+
+  .banner .navigation img{
+    padding-right: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 480px){
+   .banner .navigation img{
+    display: none;
   }
 }
