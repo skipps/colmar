@@ -99,7 +99,7 @@ html{
   }
 
   .banner{
-    flex-direction: row;
+    flex-direction: column;
   }
 }
 
@@ -111,11 +111,9 @@ html{
  /* Banner section */
  .banner{
    display: flex;
-   flex-direction: row;
    align-items: center;
    width: 100%;
    padding: 6rem 1.5rem 2rem 1.5rem;
-   margin: auto;
  }
 
 .banner img{
